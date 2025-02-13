@@ -1,0 +1,30 @@
+---
+title: "TreeGrowthLab"
+format: html
+---
+## Question 1: Read in the Minnesota tree growth dataset. Use glimpse to understand the structure and names of the dataset. Decribe the structure and what you see in the dataset?
+
+```{r}
+glimpse(Tree)
+```
+
+## Question 2: How many reocrds have been made in stand 1?
+
+```{r}
+Tree %>% 
+  filter(standID == 1) %>% 
+  summarise(n())
+```
+
+## Question 3: How many records of the Abies balsamea and Pinus strobus species have been made?
+
+```{r}
+Tree %>% 
+  filter(spe)
+```
+
+## Question 4: How many trees are older then 200 years old in the last year of the dataset?
+
+```{r}
+```
+
