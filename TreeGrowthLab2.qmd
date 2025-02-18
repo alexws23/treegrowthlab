@@ -14,6 +14,8 @@ echo: false
 The glimpse verb uses the total number of rows and columns, as well as the column names and the class of each column. In this case, most columns are doubles, with some being characters. There are 131,386 rows and 8 columns.
 ```{r}
 library(tidyverse)
+library(usethis)
+Tree <- read_csv("data/tree_dat.csv")
 #Shows structure of the data.frame with a preview of the first x rows.
 glimpse(Tree)
 ```
@@ -39,7 +41,7 @@ print(ABBAPIST)
 ```
 
 ## Question 4: How many trees are older then 200 years old in the last year of the dataset?
-
+There are seven trees older than 200 years old in the last year of the dataset.
 ```{r}
 last_year <- max(Tree$year, na.rm = TRUE) # Last year in dataset
 
@@ -217,5 +219,5 @@ TreeGrowth %>%
 ```
 
 ::: {style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));grid-gap: 1em;"}
-![Pinus resinosa](images/Pinus_resinosa.jpg){.lightbox group="my-gallery" description="Image Credit: wikipedia.org")`" fig-alt="A pine tree against a bright sky"}
+![Pinus resinosa](images/Pinus_resinosa.jpg){description="Image Credit: wikipedia.org" fig-alt="A pine tree against a bright sky"}
 :::
