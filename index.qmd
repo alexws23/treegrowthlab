@@ -7,7 +7,6 @@ lightbox:
   effect: fade
   desc-position: bottom
   loop: true
-echo: false
 ---
 ## Question 1: Read in the Minnesota tree growth dataset. Use glimpse to understand the structure and names of the dataset. Decribe the structure and what you see in the dataset?
 
